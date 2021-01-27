@@ -1,0 +1,26 @@
+<template>
+	<div class={variantClass} role="alert">
+		<span class="slds-assistive-text">{variant}</span>
+
+		<lightning-icon
+			class="slds-m-right_x-small"
+			icon-name={iconName}
+			variant={iconVariant}
+			alternative-text={variant}
+			size="x-small"
+		></lightning-icon>
+
+		<h2>
+			<slot></slot>
+		</h2>
+
+		<div class="slds-notify__close">
+			<lightning-button-icon
+				icon-name="utility:close"
+				alternative-text="Close"
+				variant={buttonIconVariant}
+				title="Close"
+			></lightning-button-icon>
+		</div>
+	</div>
+</template>

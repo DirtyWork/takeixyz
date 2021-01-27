@@ -1,0 +1,10 @@
+.slds-alert_error {
+	background-color: #c23934;
+}
+.slds-alert_warning {
+	background-color: #ffb75d;
+	color: #080707;
+}
+.slds-alert_offline {
+	background-color: #444;
+}
